@@ -3,13 +3,20 @@ import Login from '../Login/Login';
 
 const Home = () => {
     return (
-        <section>
+        <section className='container ' style={{ height: '100vh' }}>
             <div>
-                <h2>Welcome to <strong>Origin Cloud Technologies</strong> </h2>
+                <div className='row pt-5'>
+                    <div className='d-flex justify-content-center align-items-center col-12 col-lg-6 col-sm-12'>
+                        <div>
+                            <h1>Welcome to <strong>Origin Cloud Technologies</strong> </h1>
+                        </div>
+                    </div>
+                    <div className='col-12 col-lg-6 col-sm-12'>
+                        <Login />
+                    </div>
+                </div>
             </div>
-            <div>
-                <Login />
-            </div>
+
         </section>
     );
 };

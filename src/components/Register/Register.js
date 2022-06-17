@@ -2,9 +2,9 @@ import React from 'react';
 
 const Register = () => {
     return (
-        <div>
+        <section>
             <h2>This is register.</h2>
-        </div>
+        </section>
     );
 };
 
