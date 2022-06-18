@@ -18,7 +18,7 @@ const Register = () => {
     const onSubmit = async data => {
         console.log(data);
         await createUserWithEmailAndPassword(data.email, data.password);
-        const url = `http://localhost:5000/user`;
+        const url = `https://sleepy-wildwood-18876.herokuapp.com/user`;
         fetch(url, {
             method: 'POST',
             headers: {

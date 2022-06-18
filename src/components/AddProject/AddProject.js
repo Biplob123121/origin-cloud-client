@@ -16,7 +16,7 @@ const AddProject = () => {
         const email = user?.email;
         const project = Object.assign({email : email}, data);
 
-        const url = `http://localhost:5000/project`;
+        const url = `https://sleepy-wildwood-18876.herokuapp.com/project`;
         fetch(url, {
             method: 'POST',
             headers: {

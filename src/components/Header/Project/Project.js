@@ -10,7 +10,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect( () => {
-        const url = `http://localhost:5000/project/${email}`;
+        const url = `https://sleepy-wildwood-18876.herokuapp.com/project/${email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setProjects(data))

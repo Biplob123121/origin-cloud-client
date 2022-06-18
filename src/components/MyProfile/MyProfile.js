@@ -11,7 +11,7 @@ const MyProfile = () => {
     const [profile, setProfile] = useState([]);
 
     useEffect( () => {
-        const url = `http://localhost:5000/user/${email}`;
+        const url = `https://sleepy-wildwood-18876.herokuapp.com/user/${email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setProfile(data[0]))
